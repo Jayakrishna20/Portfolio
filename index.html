@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <nav class="nav-bar">
@@ -247,5 +248,132 @@
       </div>
     </section>
     <!-- =========== Projects Section Ends ============= -->
+    <!-- ========== Contact Section Starts ============ -->
+    <section class="section contact" id="contact">
+      <h2>Contact Me</h2>
+
+      <div class="contact-wrapper">
+        <form name="contact" class="contact-form">
+          <h3 class="form-head">Send Me A Note</h3>
+
+          <input
+            required
+            placeholder="Name"
+            class="input"
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
+          />
+
+          <input
+            required
+            placeholder="Email Address"
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="off"
+          />
+
+          <input
+            placeholder="Subject"
+            class="input"
+            type="text"
+            name="subject"
+            id="subject"
+            autocomplete="off"
+          />
+
+          <textarea
+            required
+            placeholder="Your Message"
+            name="message"
+            class="input"
+            id="message"
+          ></textarea>
+
+          <button class="submit btn" type="submit">Send Mail</button>
+        </form>
+
+        <div class="contact-details">
+          <div
+            class="contact-container phone"
+            onclick="window.open('tel:+917306795119');"
+          >
+            <div class="contact-icon">
+              <img src="./images/phone.svg" alt="" />
+            </div>
+            <div class="contact-info">
+              <a href="tel:+919207980389" class="contact-data"
+                >+91 7306795119</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="contact-container mail-id"
+            onclick="window.open('mailto:jayakrishnans2041@gmail.com');"
+          >
+            <div class="contact-icon">
+              <img src="./images/mail.svg" alt="" />
+            </div>
+            <div class="contact-info">
+              <a href="mailto:jayakrishnans2041@gmail.com" class="contact-data"
+                >jayakrishnans2041@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== Contact Section Ends ============= -->
+
+    <!-- =========== Footer Section Begins ============ -->
+    <footer class="footer">
+      <a href="#" class="up-btn-wrapper" alt="Go to top">
+        <img src="./images/arrow-up.svg" alt="" class="up-btn" />
+      </a>
+
+      <div class="footer-icons">
+        <a
+          href="https://www.facebook.com/aromal.anil.369"
+          target="_blank"
+          rel="noopener"
+          alt="facebook"
+        >
+          <img src="./images/facebook.svg" alt="" width="50px" height="50px" />
+        </a>
+        <a
+          href="https://linkedin.com/in/aromalanil/"
+          target="_blank"
+          rel="noopener"
+          alt="linkedin"
+        >
+          <img src="./images/linkedin.svg" alt="" width="50px" height="50px" />
+        </a>
+        <a
+          href="https://www.instagram.com/aromal.anil/"
+          target="_blank"
+          rel="noopener"
+          alt="instagram"
+        >
+          <img src="./images/instagram.svg" alt="" width="50px" height="50px" />
+        </a>
+        <a
+          href="https://www.github.com/Jayakrishna20"
+          target="_blank"
+          rel="noopener"
+          alt="github"
+        >
+          <img src="./images/github.svg" alt="" width="50px" height="50px" />
+        </a>
+      </div>
+
+      <hr width="100%" />
+
+      <p>Made with ❤️ by Jayakrishnan</p>
+      <p class="copyright">&copy; 2024 Jayakrishnan</p>
+    </footer>
   </body>
 </html>
