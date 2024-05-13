@@ -3,13 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio | Website</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <nav class="nav-bar">
       <header id="logo" onclick="window.location.href = '#';">
-        <h3>&lt;/<span>Jayakrishnan</span>&gt;</h3>
+        <h3>
+          &lt;/
+          <span>Jayakrishnan</span>
+          &gt;
+        </h3>
       </header>
 
       <div class="nav-elements">
@@ -36,8 +44,9 @@
         class="mail"
         aria-label="email"
         data-balloon-pos="left"
-        >jayakrishnans2041@gmail.com</a
       >
+        jayakrishnans2041@gmail.com
+      </a>
       <div class="mail-line"></div>
     </div>
 
@@ -48,23 +57,25 @@
         rel="noopener"
         aria-label="Github"
         data-balloon-pos="right"
-        ><img src="./images/github.svg" alt="github" width="50px" height="50px"
-      /></a>
+      >
+        <i class="fa fa-github social-i"></i>
+      </a>
       <a
         href="https://www.linkedin.com/in/jayakrishnan20/"
         target="_blank"
         rel="noopener"
         aria-label="Linkedin"
         data-balloon-pos="right"
-        ><img src="./images/linkedin.svg" alt="" width="50px" height="50px"
-      /></a>
+      >
+        <i class="fa fa-linkedin social-i"></i>
+      </a>
       <a
         href="https://www.facebook.com/jai.krishna.31945/"
         target="_blank"
         rel="noopener"
         alt="facebook"
       >
-        <img src="./images/facebook.svg" alt="" width="50px" height="50px" />
+        <i class="fa fa-facebook social-i"></i>
       </a>
       <a
         href="https://www.instagram.com/jayakrishna_27/"
@@ -72,7 +83,7 @@
         rel="noopener"
         alt="instagram"
       >
-        <img src="./images/instagram.svg" alt="" width="50px" height="50px" />
+        <i class="fa fa-instagram social-i"></i>
       </a>
       <div class="social-line"></div>
     </div>
@@ -83,27 +94,24 @@
       <main class="main">
         <div class="main-content">
           <h3>Hi There</h3>
-          <h1>I'm <span>Jayakrishnan</span></h1>
+          <h1>
+            I'm
+            <span>Jayakrishnan</span>
+          </h1>
           <h2 id="main-title">
-            I am a &nbsp;<span class="title">Software Engineer</span>
+            I am a
+            <span class="title">Software Engineer</span>
           </h2>
 
           <div class="btn-grp">
-            <div
-              class="btn primary"
-              onclick="window.open('./images/resources/resume.pdf')"
-            >
+            <div class="btn primary" onclick="window.open('./images/resources/resume.pdf')">
               <p>Get Resume</p>
             </div>
           </div>
         </div>
 
         <div class="main-img">
-          <img
-            class="hero-img"
-            src="./images/hero.svg"
-            alt="Illustration of a programmer"
-          />
+          <img class="hero-img" src="./images/hero.svg" alt="Illustration of a programmer" />
         </div>
       </main>
     </div>
@@ -119,28 +127,28 @@
         <div class="about-brief">
           <h1>About Me</h1>
           <p>
-            I'm Jayakrishnan, As a freshly minted software engineer, I am
-            excited to embark on a journey of continuous learning and innovative
-            project development. Armed with state-of-the-art skills acquired
-            through rigorous education and hands-on experiences, I am eager to
-            contribute to the dynamic field of software engineering. My passion
-            lies in pushing the boundaries of technology and creating solutions
-            that address real-world challenges. I am enthusiastic about
-            immersing myself in a collaborative environment where I can absorb
-            knowledge from seasoned professionals while actively contributing my
-            ideas and skills. My goal is not only to apply what I've learned but
-            to evolve and grow by embracing new challenges, technologies, and
-            methodologies. I am ready to bring a fresh perspective to the team
-            and contribute to the creation of cutting-edge projects that make a
-            meaningful impact.
+            I'm Jayakrishnan, As a freshly minted software engineer, I am excited to embark on a
+            journey of continuous learning and innovative project development. Armed with
+            state-of-the-art skills acquired through rigorous education and hands-on experiences, I
+            am eager to contribute to the dynamic field of software engineering. My passion lies in
+            pushing the boundaries of technology and creating solutions that address real-world
+            challenges. I am enthusiastic about immersing myself in a collaborative environment
+            where I can absorb knowledge from seasoned professionals while actively contributing my
+            ideas and skills. My goal is not only to apply what I've learned but to evolve and grow
+            by embracing new challenges, technologies, and methodologies. I am ready to bring a
+            fresh perspective to the team and contribute to the creation of cutting-edge projects
+            that make a meaningful impact.
           </p>
         </div>
 
         <div class="about-tabs">
           <ul class="tabs">
-            <li class="tab">Main Skills</li>
+            <li class="tab active" data-index="0">Main Skills</li>
+            <li class="tab" data-index="1">Experience</li>
+            <li class="tab" data-index="2">Education</li>
           </ul>
-          <div class="tab-contents skills" id="skills">
+
+          <div class="tab-contents tabcontent skills active">
             <div class="tab-content">
               <h3>Frontend Development</h3>
               <p>React, JavaScript, Typescript, HTML/CSS</p>
@@ -154,22 +162,24 @@
               <p>Unity</p>
             </div>
           </div>
-          <div class="tab-contents education">
-            <li class="tab">Education</li>
-            <div
-              class="tab-content link"
-              onclick="window.open('http://www.cectl.ac.in/');"
-            >
+          <div class="tabcontent experience tabcontent">
+            <div class="tab-content link" onclick="window.open('https://experionglobal.com/');">
+              <h3>Trainee</h3>
+              <p>Experion Technologies : Mar 2024 - Present</p>
+            </div>
+          </div>
+          <div class="tabcontent education tabcontent">
+            <div class="tab-content link" onclick="window.open('http://www.cectl.ac.in/');">
               <h3>B.Tech, Computer Science and Engineering</h3>
-              <p>College of Engineering Cherthala : 2019 - 2023</p>
+              <p>College of Engineering Cherthala : 2017 - 2021</p>
             </div>
             <div class="tab-content link">
               <h3>Higher Secondary Education</h3>
-              <p>Bhavans Vidya Mandir : 2017 - 2019</p>
+              <p>Bhavans Vidya Mandir : 2019 - 2017</p>
             </div>
             <div class="tab-content link">
               <h3>High School</h3>
-              <p>NSS Higher Secondary School, Tripunithura</p>
+              <p>NSS Higher Secondary School</p>
             </div>
           </div>
         </div>
@@ -183,67 +193,115 @@
 
       <div class="works">
         <div class="all-works project-content">
-          <div
-            class="project-card"
-            onclick="window.open('https://github.com/Jayakrishna20/avaxgods_nft_card_game');"
-          >
-            <img src="./images/avax.png" alt="Avax" class="project-img" />
+          <div class="project-card">
+            <img src="./images/summarize.png" alt="summarize" class="project-img" />
             <div class="card-content">
-              <h4>Avax</h4>
-              <h5><i class="website-i"></i>Web App</h5>
+              <h4>AI Summarizer Application</h4>
+              <h5>
+                <i class="website-i"></i>
+                Web App
+              </h5>
               <p>
-                About With a stunning design, interactive gameplay, smart wallet
-                pairing, live interaction with smart contracts, and, most
-                importantly, the ability to battle other players in real-time,
-                AvaxGods is the best and the only Web3 battle-style online
-                multiplayer card game.
+                App that leverages AI to automatically generate concise & informative summaries from
+                lengthy text content, or blogs.
               </p>
               <p>
-                <br /><strong>Technologies Used :</strong>Vite-React,
-                &nbsp;Solidity, &nbsp;tailwind
+                <br />
+                <strong>Technologies Used :</strong>
+                Vite-React, &nbsp;tailwind, &nbsp;API Integration
               </p>
+
+              <div class="card-icons">
+                <div
+                  class="card-icon"
+                  rel="noopener"
+                  onclick="window.open('https://github.com/Jayakrishna20/ai_summarizer');"
+                >
+                  <i class="fa fa-github card-i"></i>
+                </div>
+                <div
+                  class="card-icon demo"
+                  rel="noopener"
+                  onclick="window.open('https://jk-ai-summarizer.netlify.app/');"
+                >
+                  <i class="fa fa-link card-i"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div
-            class="project-card"
-            onclick="window.open('https://github.com/Jayakrishna20/lyriks');"
-          >
-            <img src="./images/Lyriks.png" alt="Avax" class="project-img" />
+          <div class="project-card">
+            <img src="./images/netflix.jfif" alt="Netflix" class="project-img" />
             <div class="card-content">
-              <h4>Lyriks</h4>
-              <h5><i class="website-i"></i>Web App</h5>
+              <h4>Netflix UI clone</h4>
+              <h5>
+                <i class="website-i"></i>
+                Web App
+              </h5>
               <p>
-                A fully-fledged music player with a modern homepage that gives
-                you a search, lyrics, song exploration features, popular music
-                around you, worldwide top charts, and much more. This is fully
-                responisve web app with songs directly taken from the Shazam
-                Core API
+                Built a Netflix UI clone in Flutter, integrating themoviedb.org API, employing
+                domain-driven development principles for a seamless, intuitive user experience.
               </p>
               <p>
-                <br /><strong>Technologies Used :</strong>React, &nbsp;Redux,
+                <br />
+                <strong>Technologies Used :</strong>
+                Flutter
               </p>
+
+              <div class="card-icons">
+                <div
+                  class="card-icon"
+                  rel="noopener"
+                  onclick="window.open('https://github.com/Jayakrishna20/netflix-clone');"
+                >
+                  <i class="fa fa-github card-i"></i>
+                </div>
+                <div
+                  class="card-icon demo"
+                  rel="noopener"
+                  style="display: none;"
+                  onclick="window.open('');"
+                >
+                  <i class="fa fa-link card-i"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div
-            class="project-card"
-            onclick="window.open('https://github.com/Jayakrishna20/reddit_clone');"
-          >
-            <img src="./images/reddit.png" alt="Avax" class="project-img" />
+          <div class="project-card">
+            <img src="./images/port.png" alt="port" class="project-img" />
             <div class="card-content">
-              <h4>Reddit</h4>
-              <h5><i class="website-i"></i>Web App</h5>
+              <h4>Personal Portfolio</h4>
+              <h5>
+                <i class="website-i"></i>
+                Web App
+              </h5>
+              <p>A personal portfolio website with added 3D models</p>
               <p>
-                Built a Reddit clone from scratch using React, Firebase,
-                Next.js, Chakra UI, and TypeScript. The application features
-                authentication, Firestore database, cloud functions, security
-                rules, Transactions, deployment, and more.
+                <br />
+                <strong>Technologies Used :</strong>
+                Vite-React, &nbsp;3D-Model, &nbsp;tailwind
               </p>
-              <p>
-                <br /><strong>Technologies Used :</strong>Nextjs,
-                &nbsp;ChakraUI, &nbsp;Firebase
-              </p>
+
+              <div class="card-icons">
+                <div
+                  class="card-icon"
+                  rel="noopener"
+                  onclick="window.open('https://github.com/Jayakrishna20/v3');"
+                >
+                  <i class="fa fa-github card-i"></i>
+                </div>
+                <div
+                  class="card-icon demo"
+                  rel="noopener"
+                  onclick="window.open('https://jk-portfolio-v3.netlify.app/');"
+                >
+                  <i class="fa fa-link card-i"></i>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="btn view-more">
+          <p id="view-more-content"><a href="projects.html" target="_self">View More</a></p>
         </div>
       </div>
     </section>
@@ -297,17 +355,12 @@
         </form>
 
         <div class="contact-details">
-          <div
-            class="contact-container phone"
-            onclick="window.open('tel:+917306795119');"
-          >
+          <div class="contact-container phone" onclick="window.open('tel:+917306795119');">
             <div class="contact-icon">
               <img src="./images/phone.svg" alt="" />
             </div>
             <div class="contact-info">
-              <a href="tel:+919207980389" class="contact-data"
-                >+91 7306795119</a
-              >
+              <a href="tel:+919207980389" class="contact-data">+91 7306795119</a>
             </div>
           </div>
 
@@ -319,9 +372,9 @@
               <img src="./images/mail.svg" alt="" />
             </div>
             <div class="contact-info">
-              <a href="mailto:jayakrishnans2041@gmail.com" class="contact-data"
-                >jayakrishnans2041@gmail.com</a
-              >
+              <a href="mailto:jayakrishnans2041@gmail.com" class="contact-data">
+                jayakrishnans2041@gmail.com
+              </a>
             </div>
           </div>
         </div>
@@ -332,7 +385,7 @@
     <!-- =========== Footer Section Begins ============ -->
     <footer class="footer">
       <a href="#" class="up-btn-wrapper" alt="Go to top">
-        <img src="./images/arrow-up.svg" alt="" class="up-btn" />
+        <i class="fa fa-arrow-up up-btn"></i>
       </a>
 
       <div class="footer-icons">
@@ -342,7 +395,7 @@
           rel="noopener"
           alt="facebook"
         >
-          <img src="./images/facebook.svg" alt="" width="50px" height="50px" />
+          <i class="fa fa-facebook social-i"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/jayakrishnan20/"
@@ -350,7 +403,7 @@
           rel="noopener"
           alt="linkedin"
         >
-          <img src="./images/linkedin.svg" alt="" width="50px" height="50px" />
+          <i class="fa fa-linkedin social-i"></i>
         </a>
         <a
           href="https://www.instagram.com/jayakrishna_27/"
@@ -358,15 +411,10 @@
           rel="noopener"
           alt="instagram"
         >
-          <img src="./images/instagram.svg" alt="" width="50px" height="50px" />
+          <i class="fa fa-instagram social-i"></i>
         </a>
-        <a
-          href="https://www.github.com/Jayakrishna20"
-          target="_blank"
-          rel="noopener"
-          alt="github"
-        >
-          <img src="./images/github.svg" alt="" width="50px" height="50px" />
+        <a href="https://www.github.com/Jayakrishna20" target="_blank" rel="noopener" alt="github">
+          <i class="fa fa-github social-i"></i>
         </a>
       </div>
 
@@ -376,4 +424,28 @@
       <p class="copyright">&copy; 2024 Jayakrishnan</p>
     </footer>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get tabs and tab contents
+        var tabs = document.querySelectorAll(".tab");
+        var tabcontents = document.querySelectorAll(".tabcontent");
+
+        // Add click event listener to each tab
+        tabs.forEach(function(tab, index) {
+          tab.addEventListener("click", function() {
+            // Remove active class from all tabs and tab contents
+            tabs.forEach(function(tab) {
+              tab.classList.remove("active");
+            });
+            tabcontents.forEach(function(tabcontent) {
+              tabcontent.classList.remove("active");
+            });
+
+            // Add active class to clicked tab and corresponding tab content
+            this.classList.add("active");
+            tabcontents[index].classList.add("active");
+          });
+        });
+      });
+  </script>
 </html>
