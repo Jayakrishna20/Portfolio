@@ -412,7 +412,7 @@ li {
   min-height: 100vh;
   padding-left: 12%;
   padding-right: 12%;
-  background-color: var(--secondary-background);
+  background-color: var(--background);
 }
 
 .portfolio h2,
