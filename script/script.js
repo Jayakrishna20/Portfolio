@@ -1,13 +1,22 @@
-$(".view-more").click(() => {
-  let txt = $("#view-more-content").text();
+document.addEventListener("DOMContentLoaded", function () {
+  // Get tabs and tab contents
+  var tabs = document.querySelectorAll(".tab");
+  var tabcontents = document.querySelectorAll(".tabcontent");
 
-  if (txt == "View More") {
-    $("#view-more-content").text("View Less");
+  // Add click event listener to each tab
+  tabs.forEach(function (tab, index) {
+    tab.addEventListener("click", function () {
+      // Remove active class from all tabs and tab contents
+      tabs.forEach(function (tab) {
+        tab.classList.remove("active");
+      });
+      tabcontents.forEach(function (tabcontent) {
+        tabcontent.classList.remove("active");
+      });
 
-    $(".hidden-card").css({ display: "block" });
-  } else {
-    $("#view-more-content").text("View More");
-
-    $(".hidden-card").css({ display: "none" });
-  }
+      // Add active class to clicked tab and corresponding tab content
+      this.classList.add("active");
+      tabcontents[index].classList.add("active");
+    });
+  });
 });

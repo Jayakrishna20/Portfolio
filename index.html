@@ -8,8 +8,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="./script/script.js"></script>
+    />    
   </head>
   <body>
     <nav class="nav-bar">
@@ -118,7 +117,7 @@
           <img
             class="hero-img"
             src="./images/hero.svg"
-            alt="Illustration of a programmer"
+            alt="programmer"
           />
         </div>
       </main>
@@ -161,15 +160,15 @@
 
           <div class="tab-contents tabcontent skills active">
             <div class="tab-content">
-              <h3>Frontend Development</h3>
+              <h3><b>Frontend Development</b></h3>
               <p>React, JavaScript, Typescript, HTML/CSS</p>
             </div>
             <div class="tab-content">
-              <h3>Backend Development</h3>
+              <h3><b>Backend Development</b></h3>
               <p>Node.js, Express, MongoDB</p>
             </div>
             <div class="tab-content">
-              <h3>Game Development</h3>
+              <h3><b>Game Development</b></h3>
               <p>Unity</p>
             </div>
           </div>
@@ -178,7 +177,7 @@
               class="tab-content link"
               onclick="window.open('https://experionglobal.com/');"
             >
-              <h3>Trainee</h3>
+              <h3><b>Trainee</b></h3>
               <p>Experion Technologies : Mar 2024 - Present</p>
             </div>
           </div>
@@ -187,15 +186,15 @@
               class="tab-content link"
               onclick="window.open('http://www.cectl.ac.in/');"
             >
-              <h3>B.Tech, Computer Science and Engineering</h3>
+              <h3><b>B.Tech, Computer Science and Engineering</b></h3>
               <p>College of Engineering Cherthala : 2017 - 2021</p>
             </div>
             <div class="tab-content link">
-              <h3>Higher Secondary Education</h3>
+              <h3><b>Higher Secondary Education</b></h3>
               <p>Bhavans Vidya Mandir : 2019 - 2017</p>
             </div>
             <div class="tab-content link">
-              <h3>High School</h3>
+              <h3><b>High School</b></h3>
               <p>NSS Higher Secondary School</p>
             </div>
           </div>
@@ -209,7 +208,7 @@
       <h3>Here are some of my recent works</h3>
 
       <div class="works">
-        <div class="all-works project-content">
+        <div class="project-cards">
           <div class="project-card">
             <img
               src="./images/summarize.png"
@@ -564,28 +563,5 @@
       <p class="copyright">&copy; 2024 Jayakrishnan</p>
     </footer>
   </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get tabs and tab contents
-      var tabs = document.querySelectorAll(".tab");
-      var tabcontents = document.querySelectorAll(".tabcontent");
-
-      // Add click event listener to each tab
-      tabs.forEach(function (tab, index) {
-        tab.addEventListener("click", function () {
-          // Remove active class from all tabs and tab contents
-          tabs.forEach(function (tab) {
-            tab.classList.remove("active");
-          });
-          tabcontents.forEach(function (tabcontent) {
-            tabcontent.classList.remove("active");
-          });
-
-          // Add active class to clicked tab and corresponding tab content
-          this.classList.add("active");
-          tabcontents[index].classList.add("active");
-        });
-      });
-    });
-  </script>
+  <script src="./script/script.js"></script>
 </html>
