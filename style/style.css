@@ -535,41 +535,26 @@ li {
 .demo i {
   font-size: 2.4rem;
 }
-@media (hover: none) {
-  .project-card:hover img {
-    transform: scale(1);
-  }
-  .btn:hover {
-    box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
-  }
-  .view-card-details {
-    height: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
+
+.card-icon:hover {
+  transform: scale(1.08);
+}
+.project-card:hover .card-content {
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.project-card:hover .project-img {
+  transform: scale(1.07);
 }
 
-@media (hover: hover) {
-  .card-icon:hover {
-    transform: scale(1.08);
-  }
-  .project-card:hover .card-content {
-    height: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  .project-card:hover .project-img {
-    transform: scale(1.07);
-  }
-
-  .contact-container:hover {
-    background-color: var(--gold);
-    border: 1.5px solid var(--gold);
-  }
-  .contact-container:hover .contact-icon {
-    border: 2px solid var(--white);
-    color: var(--gold);
-  }
+.contact-container:hover {
+  background-color: var(--gold);
+  border: 1.5px solid var(--gold);
+}
+.contact-container:hover .contact-icon {
+  border: 2px solid var(--white);
+  color: var(--gold);
 }
 
 #contact {
